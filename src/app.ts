@@ -1,3 +1,4 @@
+import { envs } from "./config/plugins/env.plugin"
 import { ServerApp } from "./presentation/server"
 
 
@@ -6,5 +7,6 @@ import { ServerApp } from "./presentation/server"
 })()
 
 async function main() {
-  ServerApp.start()
+  // ServerApp.start()
+  console.log(envs)
 }
